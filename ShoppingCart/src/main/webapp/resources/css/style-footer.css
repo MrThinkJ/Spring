@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 footer{
     height: auto;
     width: 100%;
@@ -20,4 +21,28 @@ footer{
 .rightInfo{
     width: 545px;
     height: auto;
+=======
+footer{
+    height: auto;
+    width: 100%;
+    background-color: #2f353b;
+}
+.information-line{
+    width: 100%;
+    height: 3px;
+    background-color: #ee4d2d;
+}
+.information{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 30px;
+}
+.leftInfo{
+    width: 545px;
+    height: auto;
+}
+.rightInfo{
+    width: 545px;
+    height: auto;
+>>>>>>> b0da8640a166fc3ea30658d2af083bb238490599
 }
