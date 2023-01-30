@@ -23,5 +23,5 @@
 	<mvc:annotation-driven/>
 	<mvc:default-servlet-handler/>
 	<mvc:resources mapping="/webjars/**" location="/webjars/" />
-	<mvc:resources mapping="/resources/**" location="/webapp/resources/" />
+	<mvc:resources mapping="/webapp/resources/**" location="/webapp/resources/" />
 </beans>
