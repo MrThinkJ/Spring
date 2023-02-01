@@ -36,8 +36,8 @@ public class EntityService {
     public static void deleteBookById(int id){
         bookRepository.removeBookDetailById(id);
         bookRepository.deleteById(id);
-        bookRepository.removeRedundencyBookId();;
-        bookRepository.removeRedundencyBookDetailsId();
+        bookRepository.removeRedundancyBookId();;
+        bookRepository.removeRedundancyBookDetailsId();
     }
 
     public static void updateBook(BookEntity book){

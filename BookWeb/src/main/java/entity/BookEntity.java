@@ -1,6 +1,10 @@
 package entity;
 
 import javax.persistence.*;
+import javax.validation.Valid;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
 
 @Entity
 @Table(name = "book")
@@ -9,21 +13,23 @@ public class BookEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private int id;
-
+    @NotBlank(message = "This field must be entered")
     @Column(name = "name")
     private String name;
+    @NotBlank(message = "This field must be entered")
     @Column(name = "author")
     private String author;
-
     @ManyToOne
     @JoinColumn(name = "categoryId")
+    @Valid
     private CategoryEntity category;
 
     @OneToOne(cascade = {CascadeType.ALL})
     @PrimaryKeyJoinColumn
     private BookDetailsEntity bookDetails;
 
-    public BookEntity(){}
+    public BookEntity() {
+    }
 
     public BookEntity(int id, String name, String author, CategoryEntity category, BookDetailsEntity bookDetails) {
         this.id = id;

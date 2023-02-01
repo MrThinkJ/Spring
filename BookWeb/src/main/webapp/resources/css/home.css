@@ -297,3 +297,27 @@ main .list-Book .container .row .col .delete {
 .wrapper-form .main-form .cancel {
     text-align: center;
 }
+
+.error{
+    color: #E0144C;
+    position: relative;
+    top: 5px;
+    left: 10px;
+    font-style: italic;
+}
+
+.select-box-error{
+    color: #E0144C;
+    position: relative;
+    left: 20px;
+    bottom: 3px;
+    font-style: italic;
+}
+
+.homepage-error{
+    color: #E0144C;
+    position: relative;
+    top: 15px;
+    left: 70px;
+    font-style: italic;
+}

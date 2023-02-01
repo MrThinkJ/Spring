@@ -16,11 +16,11 @@ public interface BookRepository extends CrudRepository<BookEntity, Integer> {
     @Modifying
     @Transactional(rollbackOn = Exception.class)
     @Query(value = "ALTER TABLE book AUTO_INCREMENT = 1;", nativeQuery = true)
-    void removeRedundencyBookId();
+    void removeRedundancyBookId();
     @Modifying
     @Transactional(rollbackOn = Exception.class)
     @Query(value = "ALTER TABLE bookdetails AUTO_INCREMENT = 1;", nativeQuery = true)
-    void removeRedundencyBookDetailsId();
+    void removeRedundancyBookDetailsId();
     @Modifying
     @Transactional(rollbackOn = Exception.class)
     @Query(value = "delete from bookdetails where id = ?1", nativeQuery = true)
