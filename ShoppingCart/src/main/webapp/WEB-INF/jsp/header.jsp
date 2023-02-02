@@ -4,8 +4,7 @@
         <div class="navbar" style="padding: 0; display: block;">
             <ul class="nav">
                 <li class="nav-item"><a class="nav-link active" aria-current="page"
-                                        href="../manager/list-product">Kênh Người
-                    Bán</a></li>
+                                        href="./order">Xem đơn đặt hàng</a></li>
                 <li class="nav-item separator">
                     <div></div>
                 </li>

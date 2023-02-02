@@ -51,6 +51,20 @@
             </div>
         </div>
     </div>
+    <nav class="page_nav">
+        <ul class="pagination">
+            <c:forEach var="page" begin="1" end="${numberOfPages}">
+                <c:choose>
+                    <c:when test="${currentPage == page}">
+                        <li class="page_item active"><a class="page_link" href="./${orderId}?page=${page}">${page}</a></li>
+                    </c:when>
+                    <c:otherwise>
+                        <li class="page_item"><a class="page_link" href="./${orderId}?page=${page}">${page}</a></li>
+                    </c:otherwise>
+                </c:choose>
+            </c:forEach>
+        </ul>
+    </nav>
 </main>
 <jsp:include page="footer.jsp"/>
 <script src="<c:url value="/resources/js/script-cart.js"/>"></script>

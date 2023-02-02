@@ -49,6 +49,7 @@ main {
     min-height: 532px;
     margin: 0 auto;
     transition: .3s;
+    margin-bottom: 50px;
 }
 
 main .title {
@@ -262,37 +263,24 @@ main .list-orders .container .row .col .delete {
 .wrapper-form .main-form .cancel{
     text-align: center;
 }
-.out {
-    animation: scale-display--reversed .3s;
-    animation-fill-mode:forwards;
-    display: inline-flex;
-}
-@keyframes scale-display--reversed {
-    0% {
-        display: inline-flex;
-        opacity: 1;
-    }
-    99% {
-        display: inline-flex;
-        opacity: 0;
-    }
-    100% {
-        display: none;
-        opacity: 0;
-    }
+
+.page_nav{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
 }
 
-.active {
-    animation: scale-display .3s;
-    display: block;
+.page_item{
+    padding: 0px 8px;
+    margin-right: 10px;
 }
 
-@keyframes scale-display {
-    0% {
-        opacity: 0;
-    }
+.pagination .active{
+    background-color: rgb(240, 240, 240);
+    box-shadow: inset rgba(0, 0, 0, 0.2) 0px 0px 3px 1px;
+}
 
-    100% {
-        opacity: 1;
-    }
+.page_link{
+    text-decoration: none;
+    color: #ee4d2d;
 }

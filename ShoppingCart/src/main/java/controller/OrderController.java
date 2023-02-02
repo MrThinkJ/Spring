@@ -23,9 +23,15 @@ public class OrderController {
 
     @GetMapping(path = "/orderdetails/{id}")
     public String showOrderDetails(@PathVariable int id,
+                                   @RequestParam(value = "page", required=false) Integer page,
                                    Model model){
-        List<OrderDetails> orderDetailsList = OrderService.findOrderDetailsByOrderId(id);
+        if (page == null)
+            page=1;
+        List<OrderDetails> orderDetailsList = OrderService.findOrderDetailsByOrderIdLimit(id, 10, page);
+        model.addAttribute("numberOfPages", OrderService.numberOfPages(id, 10));
         model.addAttribute("orderDetailsList", orderDetailsList);
+        model.addAttribute("orderId", id);
+        model.addAttribute("currentPage", page);
         return "orderdetails";
     }
 }

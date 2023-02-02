@@ -3,6 +3,8 @@ package entity;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotEmpty;
 import java.time.LocalDate;
 import java.util.List;
 
@@ -13,17 +15,15 @@ public class Orders {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private int id;
-
     @Column(name = "order_date")
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     LocalDate orderDate;
-
+    @NotBlank(message = "This field must be entered")
     @Column(name = "customer_name")
     String customerName;
-
+    @NotBlank(message = "This field must be entered")
     @Column(name = "customer_address")
     String customerAddress;
-
     @OneToMany(mappedBy = "orders", fetch = FetchType.LAZY)
     private List<OrderDetails> orderDetailsList;
 

@@ -29,4 +29,18 @@ public class OrderService {
         List<OrderDetails> orderDetailsList = orderDetailsRepository.findByOrderId(orderId);
         return orderDetailsList;
     }
+
+    public static int numberOfPages(int orderId, int limit){
+        int totalOrderDetails = orderDetailsRepository.findByOrderId(orderId).size();
+        int numberOfPages = totalOrderDetails/limit;
+        if (totalOrderDetails%limit != 0)
+            numberOfPages++;
+        return numberOfPages;
+    }
+
+    public static List<OrderDetails> findOrderDetailsByOrderIdLimit(int orderId, int limit, int page){
+        int offset = (page-1)*limit;
+        List<OrderDetails> orderDetailsList = orderDetailsRepository.findByOrderIdLimit(orderId, limit, offset);
+        return orderDetailsList;
+    }
 }

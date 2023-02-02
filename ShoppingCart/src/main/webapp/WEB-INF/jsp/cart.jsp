@@ -20,10 +20,6 @@
     </script>
 </head>
 <body>
-<div class="checkout-form" style="display: none;">
-    <form action="checkout" id="order-form" method="post">
-    </form>
-</div>
 <header>
     <div class="topHead d-flex" style="justify-content: space-between;">
         <div class="navbar" style="padding: 0; display: block;">
@@ -131,7 +127,7 @@
                 <div class="right-block">
                     <div class="price"><fmt:formatNumber type="number" maxFractionDigits="1" value="${totalAmount}" /><span>đ</span></div>
                     <div class="button">
-                        <button type="button" class="btn btn-danger checkout-btn">Thanh Toán</button>
+                        <button type="button" class="btn btn-danger checkout-btn" onclick="location.href='./checkout'">Thanh Toán</button>
                     </div>
                 </div>
             </div>

@@ -7,13 +7,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.*;
 import service.CartService;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.validation.Valid;
 import java.io.UnsupportedEncodingException;
 import java.util.List;
 
@@ -50,12 +49,18 @@ public class CartController {
         return "redirect:/cart";
     }
 
-    @RequestMapping(value = "/checkout", method = RequestMethod.POST)
-    private String processCheckout(@RequestParam(name = "customerName") String customerName,
-                                   @RequestParam(name = "customerAddress") String customerAddress,
-                                   HttpServletRequest request) throws UnsupportedEncodingException {
-        request.setCharacterEncoding("UTF-8");
-        CartService.checkout(cart, customerName, customerAddress);
+    @RequestMapping(value = "/checkout", method = RequestMethod.GET)
+    private String showCheckoutForm(Model model){
+        model.addAttribute("orders", new Orders());
+        return "checkout-form";
+    }
+
+    @RequestMapping(value = "/process-checkout", method = RequestMethod.POST)
+    private String processCheckout(@Valid @ModelAttribute("orders") Orders orders,
+                                   BindingResult result) throws UnsupportedEncodingException {
+        if (result.hasErrors())
+            return "checkout-form";
+        CartService.checkout(cart, orders);
         cart.emptyCart();
         return "redirect:/";
     }
@@ -71,5 +76,4 @@ public class CartController {
         cart.decrease(productId);
         return "redirect:/cart";
     }
-
 }

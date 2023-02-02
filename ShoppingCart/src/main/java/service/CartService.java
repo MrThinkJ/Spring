@@ -18,9 +18,10 @@ public class CartService {
     static AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(JPAConfig.class);
     static OrderRepository orderRepository = (OrderRepository) context.getBean("orderRepository");
     static OrderDetailsRepository orderDetailsRepository = (OrderDetailsRepository) context.getBean("orderDetailsRepository");
-    public static void checkout(Cart cart, String customerName, String customerAddress){
-        System.out.println("called");
+    public static void checkout(Cart cart, Orders order){
         Orders orders = cart.getOrder();
+        String customerName = order.getCustomerName();
+        String customerAddress = order.getCustomerAddress();
         orders.setCustomerName(customerName);
         orders.setCustomerAddress(customerAddress);
         orders.setOrderDate(LocalDate.now());
