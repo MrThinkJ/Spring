@@ -1,0 +1,506 @@
+GET http://localhost:8080/ShoppingCart/show
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Cookie: JSESSIONID=C97D12C679BD6ACE03007FF2C73FA718
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-01-26T231556.200.html
+
+###
+
+POST http://localhost:8080/ShoppingCart/add?id=1
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Cookie: JSESSIONID=C97D12C679BD6ACE03007FF2C73FA718
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-01-26T231542.200.html
+
+###
+
+GET http://localhost:8080/ShoppingCart/show
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Cookie: JSESSIONID=D37F46030CFBCFE48F7A3F0B995394A9
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-01-26T172640.200.html
+
+###
+
+GET http://localhost:8080/ShoppingCart/show
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Cookie: JSESSIONID=D37F46030CFBCFE48F7A3F0B995394A9
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-01-26T172433.200.html
+
+###
+
+POST http://localhost:8080/ShoppingCart/checkout/LeThinh/DaNang
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Cookie: JSESSIONID=3B1C1782DA368414A8E9A3EE73242683
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-01-24T210941.404.html
+
+###
+
+POST http://localhost:8080/ShoppingCart/add/1
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Cookie: JSESSIONID=3B1C1782DA368414A8E9A3EE73242683
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-01-24T210937.404.html
+
+###
+
+GET http://localhost:8080/ShoppingCart/show
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Cookie: JSESSIONID=3B1C1782DA368414A8E9A3EE73242683
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-01-24T210932.404.html
+
+###
+
+POST http://localhost:8080/ShoppingCart/add/2
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Cookie: JSESSIONID=3B1C1782DA368414A8E9A3EE73242683
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-01-24T210927.404.html
+
+###
+
+GET http://localhost:8080/ShoppingCart/show
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Cookie: JSESSIONID=485B5C2077098B359638EAAD9824FBD8
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-01-24T182850.404.html
+
+###
+
+POST http://localhost:8080/ShoppingCart/add/2
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Cookie: JSESSIONID=485B5C2077098B359638EAAD9824FBD8
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-01-24T182848.404.html
+
+###
+
+GET http://localhost:8080/ShoppingCart/show
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Cookie: JSESSIONID=485B5C2077098B359638EAAD9824FBD8
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-01-24T182844.404.html
+
+###
+
+POST http://localhost:8080/ShoppingCart/checkout/LeThinh/DaNang
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Cookie: JSESSIONID=485B5C2077098B359638EAAD9824FBD8
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-01-24T182615.404.html
+
+###
+
+GET http://localhost:8080/ShoppingCart/show
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Cookie: JSESSIONID=485B5C2077098B359638EAAD9824FBD8
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-01-24T182608.404.html
+
+###
+
+POST http://localhost:8080/ShoppingCart/add/2
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Cookie: JSESSIONID=485B5C2077098B359638EAAD9824FBD8
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-01-24T182606.404.html
+
+###
+
+POST http://localhost:8080/ShoppingCart/add/1
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Cookie: JSESSIONID=485B5C2077098B359638EAAD9824FBD8
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-01-24T182603.404.html
+
+###
+
+GET http://localhost:8080/ShoppingCart/show
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Cookie: JSESSIONID=8A525ED53F8607E4C7D3929FF83595F4
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-01-24T182539.404.html
+
+###
+
+GET http://localhost:8080/ShoppingCart/show
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Cookie: JSESSIONID=8A525ED53F8607E4C7D3929FF83595F4
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-01-24T182533.404.html
+
+###
+
+POST http://localhost:8080/ShoppingCart/add/1
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Cookie: JSESSIONID=8A525ED53F8607E4C7D3929FF83595F4
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-01-24T182532.404.html
+
+###
+
+POST http://localhost:8080/ShoppingCart/add/2
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Cookie: JSESSIONID=8A525ED53F8607E4C7D3929FF83595F4
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-01-24T182529.404.html
+
+###
+
+POST http://localhost:8080/ShoppingCart/checkout?customerName=lethinh?customerAddress=DaNang
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Cookie: JSESSIONID=8A525ED53F8607E4C7D3929FF83595F4
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-01-24T181458.400.html
+
+###
+
+POST http://localhost:8080/ShoppingCart/checkout
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Cookie: JSESSIONID=8A525ED53F8607E4C7D3929FF83595F4
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-01-24T181301.400.html
+
+###
+
+POST http://localhost:8080/ShoppingCart/add/2
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Cookie: JSESSIONID=8A525ED53F8607E4C7D3929FF83595F4
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-01-24T181259.404.html
+
+###
+
+GET http://localhost:8080/ShoppingCart/show
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Cookie: JSESSIONID=8A525ED53F8607E4C7D3929FF83595F4
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-01-24T181224.404.html
+
+###
+
+POST http://localhost:8080/ShoppingCart/checkout
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Cookie: JSESSIONID=8A525ED53F8607E4C7D3929FF83595F4
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-01-24T181207.400.html
+
+###
+
+GET http://localhost:8080/ShoppingCart/show
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Cookie: JSESSIONID=8A525ED53F8607E4C7D3929FF83595F4
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-01-24T181200.404.html
+
+###
+
+POST http://localhost:8080/ShoppingCart/remove/1
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Cookie: JSESSIONID=8A525ED53F8607E4C7D3929FF83595F4
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-01-24T181158.404.html
+
+###
+
+GET http://localhost:8080/ShoppingCart/show
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Cookie: JSESSIONID=8A525ED53F8607E4C7D3929FF83595F4
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-01-24T181140.404.html
+
+###
+
+POST http://localhost:8080/ShoppingCart/add/2
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Cookie: JSESSIONID=8A525ED53F8607E4C7D3929FF83595F4
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-01-24T181136.404.html
+
+###
+
+POST http://localhost:8080/ShoppingCart/add/1
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Cookie: JSESSIONID=8A525ED53F8607E4C7D3929FF83595F4
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-01-24T181134.404.html
+
+###
+
+POST http://localhost:8080/ShoppingCart/add/3
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Cookie: JSESSIONID=8A525ED53F8607E4C7D3929FF83595F4
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-01-24T181131.404.html
+
+###
+
+GET http://localhost:8080/ShoppingCart/show
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Cookie: JSESSIONID=8A525ED53F8607E4C7D3929FF83595F4
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-01-24T181050.404.html
+
+###
+
+POST http://localhost:8080/ShoppingCart/remove/3
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Cookie: JSESSIONID=8A525ED53F8607E4C7D3929FF83595F4
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-01-24T181045.500.html
+
+###
+
+POST http://localhost:8080/remove/3
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-01-24T181033.404.html
+
+###
+
+POST http://localhost:8080/ShoppingCart/add/3
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Cookie: JSESSIONID=8A525ED53F8607E4C7D3929FF83595F4
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-01-24T181028.404.html
+
+###
+
+GET http://localhost:8080/ShoppingCart/show
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Cookie: JSESSIONID=8A525ED53F8607E4C7D3929FF83595F4
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-01-24T180935.404.html
+
+###
+
+POST http://localhost:8080/remove/2
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-01-24T180929.404.html
+
+###
+
+GET http://localhost:8080/ShoppingCart/show
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Cookie: JSESSIONID=8A525ED53F8607E4C7D3929FF83595F4
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-01-24T180913.404.html
+
+###
+
+POST http://localhost:8080/remove/2
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-01-24T180908.404.html
+
+###
+
+GET http://localhost:8080/ShoppingCart/show
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Cookie: JSESSIONID=8A525ED53F8607E4C7D3929FF83595F4
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-01-24T180856.404.html
+
+###
+
+POST http://localhost:8080/ShoppingCart/add/3
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Cookie: JSESSIONID=8A525ED53F8607E4C7D3929FF83595F4
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-01-24T180854.404.html
+
+###
+
+GET http://localhost:8080/ShoppingCart/show
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Cookie: JSESSIONID=8A525ED53F8607E4C7D3929FF83595F4
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-01-24T180839.404.html
+
+###
+
+POST http://localhost:8080/ShoppingCart/add/2
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Cookie: JSESSIONID=8A525ED53F8607E4C7D3929FF83595F4
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-01-24T180836.404.html
+
+###
+
+GET http://localhost:8080/ShoppingCart/show
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Cookie: JSESSIONID=8A525ED53F8607E4C7D3929FF83595F4
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-01-24T180831.404.html
+
+###
+
+POST http://localhost:8080/ShoppingCart/add/1
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Cookie: JSESSIONID=8A525ED53F8607E4C7D3929FF83595F4
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-01-24T180825.404.html
+
+###
+
+GET http://localhost:8080/ShoppingCart/show
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Cookie: JSESSIONID=5E047075A9F54303055A01FFF35BC695
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-01-19T204925.404.html
+
+###
+
+POST http://localhost:8080/ShoppingCart/remove/1
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Cookie: JSESSIONID=5E047075A9F54303055A01FFF35BC695
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-01-19T204924.500.html
+
+###
+
+GET http://localhost:8080/ShoppingCart/show
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Cookie: JSESSIONID=5E047075A9F54303055A01FFF35BC695
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-01-19T204919.404.html
+
+###
+
+POST http://localhost:8080/ShoppingCart/add/1
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Cookie: JSESSIONID=5E047075A9F54303055A01FFF35BC695
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-01-19T204915.404.html
+
+###
+
+GET http://localhost:8080/ShoppingCart/show
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Cookie: JSESSIONID=5E047075A9F54303055A01FFF35BC695
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-01-19T204912.404.html
+
+###
+
+POST http://localhost:8080/ShoppingCart/remove/1
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.5)
+Cookie: JSESSIONID=5E047075A9F54303055A01FFF35BC695
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-01-19T204905.500.html
+
+###
+

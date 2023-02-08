@@ -1,0 +1,624 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>hello</title>
+    <link href="/ShoppingCart/resources/css/style-header.css" rel="stylesheet">
+    <link href="/ShoppingCart/resources/css/style.css" rel="stylesheet">
+    <link href="/ShoppingCart/resources/css/style-footer.css" rel="stylesheet">
+    <link href="webjars/bootstrap/5.1.3/css/bootstrap.min.css"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script type="text/javascript" src="webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="webjars/jquery/3.6.0/jquery.js"/>
+    </script>
+    <script type="text/javascript" src="webjars/popper.js/2.9.3/umd/popper.min.js"/>
+    </script>
+</head>
+<body>
+
+<header>
+    <div class="topHead d-flex" style="justify-content: space-between;">
+        <div class="navbar" style="padding: 0; display: block;">
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link active" aria-current="page"
+                                        href="../manager/list-product">Kênh Người
+                    Bán</a></li>
+                <li class="nav-item separator">
+                    <div></div>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#">Trở thành
+                    Người bán Shopee </a></li>
+                <li class="nav-item separator">
+                    <div></div>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#">Tải ứng
+                    dụng</a></li>
+                <li class="nav-item separator">
+                    <div></div>
+                </li>
+            </ul>
+        </div>
+        <div class="navbar" style="padding: 0px 0px 10px 0px; display: block;">
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link active" href="#"><i class="fa-regular fa-bell"></i> Thông
+                    Báo</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><i class="fa-regular fa-circle-question"></i> Hỗ
+                    Trợ</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-earth-americas"></i> Tiếng
+                    Việt</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="wrapHeaderSearch">
+        <div class="headerSearch d-flex" style="justify-content: space-between;">
+            <div class="logo d-flex">
+                <div style="width: 47px; height: 48px; color: #fff;">
+                    <i class="fa-brands fa-github fa-3x"></i>
+                </div>
+                <div>
+                    <span style="font-size: 25px; margin-left: 10px; color: white;">MrThinkJ</span>
+                </div>
+            </div>
+            <div class="wrapper-searchbar">
+                <div class="searchbar d-flex">
+                    <form action='home' method='post' class='d-flex'>
+                        <div class="input">
+                            <input name='search-input' type="text"
+                                   style="border: none; width: 754px; height: 34px; padding-left: 10px; border-radius: 3px;"
+                                   placeholder="Nhập sản phẩm bạn muốn tìm">
+                        </div>
+                        <div class="d-flex searchbtn">
+                            <button class="d-flex">
+                                <i class="fa-solid fa-magnifying-glass fa-xs"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="cart d-flex" style="margin-right: 60px; color: white; font-size: 10px;">
+                <i class="fa-solid fa-cart-shopping fa-2xl"></i>
+            </div>
+            <div class="arrow"></div>
+            <div class="in-cart">
+                <div class="product-in-cart">
+
+                    <c:forEach items="" var="productInCart">
+                        <div class="product-cart">
+                            <div class="product-cart-image">
+                            </div>
+                            <div class="in-cart-product-name">
+                                <div class="product-cart-name">
+                                    <div class="name">Laptop</div>
+                                    <div class="price">1000000</div>
+                                </div>
+                            </div>
+                        </div>
+                    </c:forEach>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="product">
+        <div class="container" style="width: 1201px; margin-bottom: 30px;">
+            <div class="row">
+
+                <div class="col-2">
+                    <a href="product.html">
+                        <div class="wrapper-non-flex" style="height: 100%;">
+                            <div class="wrapper-product d-flex">
+                                <div class="contain-img">
+                                    <div class="wrapper-img">
+                                        <img src="/ShoppingCart/resources/image/product/product1.jfif " alt="">
+                                    </div>
+                                </div>
+                                <div class="wrapper-text-product d-flex">
+                                    <div class="wrapper-product-name d-flex">
+                                        <div class="wrapper-name d-flex">
+                                            <div class="product-name">
+                                                Dong Ho
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-detail d-flex">
+                                        <div class="product-price">
+                                                <span>
+                                                    đ
+                                                </span>
+                                            <span>
+                                                    200000.0
+                                                </span>
+                                        </div>
+                                        <div class="add-to-cart-btn">
+                                            <form action="add" method="post">
+                                                <input value="1" name="id" style="display: none">
+                                                <button type="submit" class="btn btn-danger">Thêm vào giỏ</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-2">
+                    <a href="product.html">
+                        <div class="wrapper-non-flex" style="height: 100%;">
+                            <div class="wrapper-product d-flex">
+                                <div class="contain-img">
+                                    <div class="wrapper-img">
+                                        <img src="/ShoppingCart/resources/image/product/product1.jfif " alt="">
+                                    </div>
+                                </div>
+                                <div class="wrapper-text-product d-flex">
+                                    <div class="wrapper-product-name d-flex">
+                                        <div class="wrapper-name d-flex">
+                                            <div class="product-name">
+                                                Laptop
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-detail d-flex">
+                                        <div class="product-price">
+                                                <span>
+                                                    đ
+                                                </span>
+                                            <span>
+                                                    900000.0
+                                                </span>
+                                        </div>
+                                        <div class="add-to-cart-btn">
+                                            <form action="add" method="post">
+                                                <input value="2" name="id" style="display: none">
+                                                <button type="submit" class="btn btn-danger">Thêm vào giỏ</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-2">
+                    <a href="product.html">
+                        <div class="wrapper-non-flex" style="height: 100%;">
+                            <div class="wrapper-product d-flex">
+                                <div class="contain-img">
+                                    <div class="wrapper-img">
+                                        <img src="/ShoppingCart/resources/image/product/product1.jfif " alt="">
+                                    </div>
+                                </div>
+                                <div class="wrapper-text-product d-flex">
+                                    <div class="wrapper-product-name d-flex">
+                                        <div class="wrapper-name d-flex">
+                                            <div class="product-name">
+                                                Dien Thoai
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-detail d-flex">
+                                        <div class="product-price">
+                                                <span>
+                                                    đ
+                                                </span>
+                                            <span>
+                                                    1000000.0
+                                                </span>
+                                        </div>
+                                        <div class="add-to-cart-btn">
+                                            <form action="add" method="post">
+                                                <input value="3" name="id" style="display: none">
+                                                <button type="submit" class="btn btn-danger">Thêm vào giỏ</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-2">
+                    <a href="product.html">
+                        <div class="wrapper-non-flex" style="height: 100%;">
+                            <div class="wrapper-product d-flex">
+                                <div class="contain-img">
+                                    <div class="wrapper-img">
+                                        <img src="/ShoppingCart/resources/image/product/product1.jfif " alt="">
+                                    </div>
+                                </div>
+                                <div class="wrapper-text-product d-flex">
+                                    <div class="wrapper-product-name d-flex">
+                                        <div class="wrapper-name d-flex">
+                                            <div class="product-name">
+                                                Máy tính bảng
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-detail d-flex">
+                                        <div class="product-price">
+                                                <span>
+                                                    đ
+                                                </span>
+                                            <span>
+                                                    1000000.0
+                                                </span>
+                                        </div>
+                                        <div class="add-to-cart-btn">
+                                            <form action="add" method="post">
+                                                <input value="4" name="id" style="display: none">
+                                                <button type="submit" class="btn btn-danger">Thêm vào giỏ</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-2">
+                    <a href="product.html">
+                        <div class="wrapper-non-flex" style="height: 100%;">
+                            <div class="wrapper-product d-flex">
+                                <div class="contain-img">
+                                    <div class="wrapper-img">
+                                        <img src="/ShoppingCart/resources/image/product/product1.jfif " alt="">
+                                    </div>
+                                </div>
+                                <div class="wrapper-text-product d-flex">
+                                    <div class="wrapper-product-name d-flex">
+                                        <div class="wrapper-name d-flex">
+                                            <div class="product-name">
+                                                Tai Nghe
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-detail d-flex">
+                                        <div class="product-price">
+                                                <span>
+                                                    đ
+                                                </span>
+                                            <span>
+                                                    1233456.0
+                                                </span>
+                                        </div>
+                                        <div class="add-to-cart-btn">
+                                            <form action="add" method="post">
+                                                <input value="5" name="id" style="display: none">
+                                                <button type="submit" class="btn btn-danger">Thêm vào giỏ</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-2">
+                    <a href="product.html">
+                        <div class="wrapper-non-flex" style="height: 100%;">
+                            <div class="wrapper-product d-flex">
+                                <div class="contain-img">
+                                    <div class="wrapper-img">
+                                        <img src="/ShoppingCart/resources/image/product/product1.jfif " alt="">
+                                    </div>
+                                </div>
+                                <div class="wrapper-text-product d-flex">
+                                    <div class="wrapper-product-name d-flex">
+                                        <div class="wrapper-name d-flex">
+                                            <div class="product-name">
+                                                Sách
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-detail d-flex">
+                                        <div class="product-price">
+                                                <span>
+                                                    đ
+                                                </span>
+                                            <span>
+                                                    100000.0
+                                                </span>
+                                        </div>
+                                        <div class="add-to-cart-btn">
+                                            <form action="add" method="post">
+                                                <input value="6" name="id" style="display: none">
+                                                <button type="submit" class="btn btn-danger">Thêm vào giỏ</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-2">
+                    <a href="product.html">
+                        <div class="wrapper-non-flex" style="height: 100%;">
+                            <div class="wrapper-product d-flex">
+                                <div class="contain-img">
+                                    <div class="wrapper-img">
+                                        <img src="/ShoppingCart/resources/image/product/product1.jfif " alt="">
+                                    </div>
+                                </div>
+                                <div class="wrapper-text-product d-flex">
+                                    <div class="wrapper-product-name d-flex">
+                                        <div class="wrapper-name d-flex">
+                                            <div class="product-name">
+                                                Tablet
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-detail d-flex">
+                                        <div class="product-price">
+                                                <span>
+                                                    đ
+                                                </span>
+                                            <span>
+                                                    1000000.0
+                                                </span>
+                                        </div>
+                                        <div class="add-to-cart-btn">
+                                            <form action="add" method="post">
+                                                <input value="7" name="id" style="display: none">
+                                                <button type="submit" class="btn btn-danger">Thêm vào giỏ</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-2">
+                    <a href="product.html">
+                        <div class="wrapper-non-flex" style="height: 100%;">
+                            <div class="wrapper-product d-flex">
+                                <div class="contain-img">
+                                    <div class="wrapper-img">
+                                        <img src="/ShoppingCart/resources/image/product/product1.jfif " alt="">
+                                    </div>
+                                </div>
+                                <div class="wrapper-text-product d-flex">
+                                    <div class="wrapper-product-name d-flex">
+                                        <div class="wrapper-name d-flex">
+                                            <div class="product-name">
+                                                Đèn Phòng
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-detail d-flex">
+                                        <div class="product-price">
+                                                <span>
+                                                    đ
+                                                </span>
+                                            <span>
+                                                    1233456.0
+                                                </span>
+                                        </div>
+                                        <div class="add-to-cart-btn">
+                                            <form action="add" method="post">
+                                                <input value="8" name="id" style="display: none">
+                                                <button type="submit" class="btn btn-danger">Thêm vào giỏ</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-2">
+                    <a href="product.html">
+                        <div class="wrapper-non-flex" style="height: 100%;">
+                            <div class="wrapper-product d-flex">
+                                <div class="contain-img">
+                                    <div class="wrapper-img">
+                                        <img src="/ShoppingCart/resources/image/product/product1.jfif " alt="">
+                                    </div>
+                                </div>
+                                <div class="wrapper-text-product d-flex">
+                                    <div class="wrapper-product-name d-flex">
+                                        <div class="wrapper-name d-flex">
+                                            <div class="product-name">
+                                                Camera
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-detail d-flex">
+                                        <div class="product-price">
+                                                <span>
+                                                    đ
+                                                </span>
+                                            <span>
+                                                    100000.0
+                                                </span>
+                                        </div>
+                                        <div class="add-to-cart-btn">
+                                            <form action="add" method="post">
+                                                <input value="9" name="id" style="display: none">
+                                                <button type="submit" class="btn btn-danger">Thêm vào giỏ</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-2">
+                    <a href="product.html">
+                        <div class="wrapper-non-flex" style="height: 100%;">
+                            <div class="wrapper-product d-flex">
+                                <div class="contain-img">
+                                    <div class="wrapper-img">
+                                        <img src="/ShoppingCart/resources/image/product/product1.jfif " alt="">
+                                    </div>
+                                </div>
+                                <div class="wrapper-text-product d-flex">
+                                    <div class="wrapper-product-name d-flex">
+                                        <div class="wrapper-name d-flex">
+                                            <div class="product-name">
+                                                Tranh Sơn Dầu
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-detail d-flex">
+                                        <div class="product-price">
+                                                <span>
+                                                    đ
+                                                </span>
+                                            <span>
+                                                    1000000.0
+                                                </span>
+                                        </div>
+                                        <div class="add-to-cart-btn">
+                                            <form action="add" method="post">
+                                                <input value="10" name="id" style="display: none">
+                                                <button type="submit" class="btn btn-danger">Thêm vào giỏ</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-2">
+                    <a href="product.html">
+                        <div class="wrapper-non-flex" style="height: 100%;">
+                            <div class="wrapper-product d-flex">
+                                <div class="contain-img">
+                                    <div class="wrapper-img">
+                                        <img src="/ShoppingCart/resources/image/product/product1.jfif " alt="">
+                                    </div>
+                                </div>
+                                <div class="wrapper-text-product d-flex">
+                                    <div class="wrapper-product-name d-flex">
+                                        <div class="wrapper-name d-flex">
+                                            <div class="product-name">
+                                                Code Java
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-detail d-flex">
+                                        <div class="product-price">
+                                                <span>
+                                                    đ
+                                                </span>
+                                            <span>
+                                                    1233456.0
+                                                </span>
+                                        </div>
+                                        <div class="add-to-cart-btn">
+                                            <form action="add" method="post">
+                                                <input value="11" name="id" style="display: none">
+                                                <button type="submit" class="btn btn-danger">Thêm vào giỏ</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-2">
+                    <a href="product.html">
+                        <div class="wrapper-non-flex" style="height: 100%;">
+                            <div class="wrapper-product d-flex">
+                                <div class="contain-img">
+                                    <div class="wrapper-img">
+                                        <img src="/ShoppingCart/resources/image/product/product1.jfif " alt="">
+                                    </div>
+                                </div>
+                                <div class="wrapper-text-product d-flex">
+                                    <div class="wrapper-product-name d-flex">
+                                        <div class="wrapper-name d-flex">
+                                            <div class="product-name">
+                                                Tool
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-detail d-flex">
+                                        <div class="product-price">
+                                                <span>
+                                                    đ
+                                                </span>
+                                            <span>
+                                                    100000.0
+                                                </span>
+                                        </div>
+                                        <div class="add-to-cart-btn">
+                                            <form action="add" method="post">
+                                                <input value="12" name="id" style="display: none">
+                                                <button type="submit" class="btn btn-danger">Thêm vào giỏ</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <footer>
+        <div class="information-line"></div>
+        <div class="information">
+            <div class="leftInfo">
+                <div style="display: flex;">
+                    <p
+                            style="font-size: 20px; color: azure; font-weight: bold; margin-right: 5px;">VỀ</p>
+                    <p style="color: #32C5D2; font-size: 20px; font-weight: bolder;">MRTHINKJ</p>
+                </div>
+                <div style="font-size: 18px; color: aliceblue;">Uy Tín Tạo Niềm
+                    Tin, Đẳng Cấp Làm Nên Thương Hiệu
+                </div>
+                <div style="font-size: 18px; color: aliceblue;">
+                    Chỉ Có Thứ Bạn Không Nghĩ tới <br> Không Có Thứ Chúng Tôi Không
+                    Làm Được
+                </div>
+                <div
+                        style="font-size: 18px; color: aliceblue; display: flex; margin-top: 8px;">
+                    <p style="margin-right: 5px;">2022 &copy MRTHINKJ Web Được Phát
+                        Triển Bởi</p>
+                    <p style="color: red; font-weight: bold;">LÊ THỊNH</p>
+                </div>
+            </div>
+            <div class="rightInfo">
+                <div style="display: flex;">
+                    <p
+                            style="font-size: 20px; color: azure; font-weight: bold; margin-right: 5px;">CHÚNG
+                        TÔI Ở ĐÂY</p>
+                </div>
+                <div style="font-size:18px; color: aliceblue;">Chúng tôi làm
+                    việc một cách chuyên nghiệp, uy tín, nhanh chóng và luôn đặt quyền
+                    lợi của bạn lên hàng đầu
+                </div>
+                <div style="font-size: 18px; color: aliceblue; margin-top: 10px;">
+                    <div>Hotline: 0775.102.222</div>
+                    <div>Fb: www.facebook.com/binthinhle</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</footer>
+<script src="resources/js/home.js"></script>
+</body>
